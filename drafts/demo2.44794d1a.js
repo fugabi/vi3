@@ -6209,7 +6209,7 @@ var Cursor = /*#__PURE__*/function () {
     this.DOM = {
       el: el
     };
-    this.DOM.el.style.opacity = 0;
+    this.DOM.el.style.opacity = 1;
     this.bounds = this.DOM.el.getBoundingClientRect();
     this.renderedStyles = {
       tx: {
@@ -6266,7 +6266,7 @@ var Cursor = /*#__PURE__*/function () {
 }();
 
 exports.default = Cursor;
-},{"gsap":"../node_modules/gsap/index.js","./utils":"js/utils.js"}],"js/demo1/grid.js":[function(require,module,exports) {
+},{"gsap":"../node_modules/gsap/index.js","./utils":"js/utils.js"}],"js/demo2/grid.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6300,8 +6300,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var winsize = (0, _utils.calcWinsize)();
 window.addEventListener('resize', function () {
   return winsize = (0, _utils.calcWinsize)();
-}); // Track the mouse position
-
+});
 var mousepos = {
   x: winsize.width / 2,
   y: winsize.height / 2
@@ -6318,33 +6317,31 @@ var GridItem = /*#__PURE__*/function () {
       el: el
     };
     this.move();
-  } // Move the items when moving the cursor
-
+  }
 
   _createClass(GridItem, [{
     key: "move",
     value: function move() {
       var _this = this;
 
-      // amounts to move in each axis
       var translationVals = {
         tx: 0,
-        ty: 0
-      }; // get random start and end movement boundaries
-
+        ty: 0,
+        r: 0
+      };
       var xstart = (0, _utils.getRandomNumber)(15, 60);
-      var ystart = (0, _utils.getRandomNumber)(15, 60); // infinite loop
+      var ystart = (0, _utils.getRandomNumber)(30, 90);
+      var randR = (0, _utils.getRandomNumber)(-15, 15);
 
       var render = function render() {
-        // Calculate the amount to move.
-        // Using linear interpolation to smooth things out. 
-        // Translation values will be in the range of [-start, start] for a cursor movement from 0 to the window's width/height
         translationVals.tx = (0, _utils.lerp)(translationVals.tx, (0, _utils.map)(mousepos.x, 0, winsize.width, -xstart, xstart), 0.07);
         translationVals.ty = (0, _utils.lerp)(translationVals.ty, (0, _utils.map)(mousepos.y, 0, winsize.height, -ystart, ystart), 0.07);
+        translationVals.r = (0, _utils.lerp)(translationVals.r, (0, _utils.map)(mousepos.x, 0, winsize.width, -randR, randR), 0.07);
 
         _gsap.gsap.set(_this.DOM.el, {
           x: translationVals.tx,
-          y: translationVals.ty
+          y: translationVals.ty,
+          rotation: translationVals.r
         });
 
         requestAnimationFrame(render);
@@ -6380,7 +6377,7 @@ var Grid = /*#__PURE__*/function () {
     value: function showItems() {
       _gsap.gsap.timeline().set(this.items, {
         scale: 0.7,
-        opacity: 0
+        opacity: 1
       }, 0).to(this.items, {
         duration: 2,
         ease: 'Expo.easeOut',
@@ -6393,7 +6390,7 @@ var Grid = /*#__PURE__*/function () {
       }, 0).to(this.items, {
         duration: 3,
         ease: 'Power1.easeOut',
-        opacity: 0.7,
+        opacity: 1,
         stagger: {
           amount: 0.6,
           grid: 'auto',
@@ -6407,7 +6404,7 @@ var Grid = /*#__PURE__*/function () {
 }();
 
 exports.default = Grid;
-},{"gsap":"../node_modules/gsap/index.js","../utils":"js/utils.js"}],"js/demo1/index.js":[function(require,module,exports) {
+},{"gsap":"../node_modules/gsap/index.js","../utils":"js/utils.js"}],"js/demo2/index.js":[function(require,module,exports) {
 "use strict";
 
 var _cursor = _interopRequireDefault(require("../cursor"));
@@ -6426,7 +6423,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   var grid = new _grid.default(document.querySelector('.grid'));
 });
 var cursor = new _cursor.default(document.querySelector('.cursor'));
-},{"../cursor":"js/cursor.js","./grid":"js/demo1/grid.js","../utils":"js/utils.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../cursor":"js/cursor.js","./grid":"js/demo2/grid.js","../utils":"js/utils.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -6454,7 +6451,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62225" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58686" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -6529,7 +6526,7 @@ function createErrorOverlay(data) {
   var stackTrace = document.createElement('pre');
   message.innerText = data.error.message;
   stackTrace.innerText = data.error.stack;
-  overlay.innerHTML = '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; opacity: 0.85; font-family: Menlo, Consolas, monospace; z-index: 9999;">' + '<span style="background: red; padding: 2px 4px; border-radius: 2px;">ERROR</span>' + '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' + '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' + message.innerHTML + '</div>' + '<pre>' + stackTrace.innerHTML + '</pre>' + '</div>';
+  overlay.innerHTML = '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; opacity: 1; font-family: Menlo, Consolas, monospace; z-index: 9999;">' + '<span style="background: red; padding: 2px 4px; border-radius: 2px;">ERROR</span>' + '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' + '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' + message.innerHTML + '</div>' + '<pre>' + stackTrace.innerHTML + '</pre>' + '</div>';
   return overlay;
 }
 
@@ -6630,5 +6627,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/demo1/index.js"], null)
-//# sourceMappingURL=/demo1.151408fb.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/demo2/index.js"], null)
+//# sourceMappingURL=/demo2.44794d1a.js.map
