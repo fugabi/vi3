@@ -64,6 +64,15 @@ a:focus {
 	outline: none;
 }
 
+h1 {
+	color: rgba(0, 0, 0, 0.603);
+}
+
+h2 {
+	font-size: 1.25rem;
+	color:rgba(233, 16, 16, 0.815);
+}
+
 /* Page Loader */
 .js .loading::before,
 .js .loading::after {
@@ -167,8 +176,8 @@ a:focus {
 	overflow-x: hidden;
 }
 
-.grid {
-	/* pointer-events: none; */
+/* .grid {
+	pointer-events: none;
 	position: absolute;
 	width: 110%;
 	height: 110%;
@@ -177,7 +186,7 @@ a:focus {
 	display: grid;
 	grid-template-columns: repeat(fr,fr);
 	grid-template-rows: repeat(fr,fr);
-}
+} */
 
 .grid__item {
 	position: relative;
@@ -368,7 +377,9 @@ a:focus {
 
 
 
-
+.landing-img {
+	filter: drop-shadow(0px 10px 10px rgb(102, 103, 104)); 
+}
 
 
 
@@ -470,8 +481,8 @@ a:focus {
 		top: 0;
 		left: 0;
 		display: grid;
-		grid-template-columns: repeat(fr,fr);
-		grid-template-rows: repeat(fr,fr);
+		grid-template-columns: repeat(50,2%);
+	grid-template-rows: repeat(50,2%);
 	}
 	
 	.grid__item {
@@ -506,51 +517,89 @@ a:focus {
 
 
 	.pos-1 {
-		grid-area: 10 / 1 / 26 / 7;
+		grid-area: 2 / 4 / 20 / 14;
+	}
+	.pos-1t {
+		grid-area: 17 / 10 / 20 / 16;
 	}
 	
+	
 	.pos-2 {
-		grid-area: 5 / 21 / 20 / 30;
+		grid-area: 4 / 18 / 20 / 30;
+	}
+	.pos-2t {
+		grid-area: 17 / 26 / 19 / 30;
 	}
 	
 	.pos-3 {
-		grid-area: 1 / 36 / 14 / 42;
+		grid-area: 3 / 38 / 26 / 46;
+		z-index: -998;
 	}
+	.pos-3t {
+		grid-area: 23 / 43 / 26 / 46;
+		z-index: -998;
+	}
+
+
 	
 	.pos-4 {
 		grid-area: 13 / 11 / 32 / 18;
 	}
 	
-	.pos-5 {
-		grid-area: 18 / 28 / 19 / 29;
-	}
+	
 	
 	.pos-6 {
 		grid-area: 20 / 46 / 28 / 51;
 	}
 	
 	.pos-7 {
-		grid-area: 43 / 1 / 51 / 10;
+		grid-area: 30 / 2 / 49 / 12;
 	}
+	.pos-7t {
+		grid-area: 46 / 3 / 49 / 12;
+	}
+
 	
 	.pos-8 {
-		grid-area: 38 / 14 / 46 / 22;
+		grid-area: 32 / 14 / 46 / 26;
+	}
+	.pos-8t {
+		grid-area: 32 / 14 / 46 / 26;
 	}
 	
 	.pos-9 {
-		grid-area: 33 / 26 / 47 / 32;
+		grid-area: 30 / 30 / 49 / 37;
+		z-index: -99;
+	}
+	.pos-9t {
+		grid-area: 31 / 30 / 49 / 37;
+		z-index: -99;
 	}
 	
 	.pos-10 {
-		 grid-area: 37 / 39 / 48 / 47;
+		 grid-area: 31 / 39 / 47 / 50;
 	}
+	.pos-10t {
+		grid-area: 32 / 46 / 48 / 49;
+   }
+
 	
 	.pos-11 {
-		grid-area: 27 / 5 / 33 / 15;
+		grid-area: 18 / 11 / 31 / 20;
+		z-index: -999;
+	}
+	.pos-11t {
+		grid-area: 28 / 12 / 32 / 21;
+		z-index: -999;
 	}
 	
 	.pos-12 {
-		grid-area: 15 / 43 / 23 / 33;
+		grid-area: 12 / 29 / 26 / 40;
+		z-index: -99;
+	}
+	.pos-12t {
+		grid-area: 13 / 36 / 18 / 40;
+		z-index: -99;
 	}
 
 
