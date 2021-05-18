@@ -564,7 +564,7 @@ h2 {
 		grid-area: 32 / 14 / 46 / 26;
 	}
 	.pos-8t {
-		grid-area: 32 / 14 / 46 / 26;
+		grid-area: 32 / 15 / 46 / 26;
 	}
 	
 	.pos-9 {
@@ -635,14 +635,15 @@ h2 {
 	  }
 	  
 	  .img {
-		width: 40%;
+		width: 24%;
 		padding: 2em;
 		color: #ffffff;
+		height: 70vh;
 		/* min-height: 800px; */
 	  }
 	  
 	  .txt {
-		width: 40%;
+		width: 33%;
 		padding: 3rem;
 		/* min-height: 500px; */
 		color: #222;
