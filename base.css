@@ -529,7 +529,7 @@ h2 {
 		grid-area: 4 / 18 / 20 / 30;
 	}
 	.pos-2t {
-		grid-area: 17 / 26 / 19 / 30;
+		grid-area: 3 / 32 / 19 / 35;
 	}
 	
 	.pos-3 {
@@ -599,7 +599,7 @@ h2 {
 		z-index: -99;
 	}
 	.pos-12t {
-		grid-area: 17 / 36 / 18 / 40;
+		grid-area: 23 / 34 / 25 / 40;
 		z-index: -99;
 	}
 
