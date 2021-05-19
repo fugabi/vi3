@@ -270,13 +270,13 @@ h2 {
 }
 
 .pos-2 {
-	grid-area: 6 / 12 / 16 / 37;
-	z-index: -9;
+	grid-area: 6 / 11 / 14 / 37;
+	z-index: -5;
 	/* queen */
 }
 
 .pos-3 { 
-	grid-area: 4 / 33 / 19 / 48;
+	grid-area: 4 / 35 / 19 / 48;
 	z-index: -99;
 	/* diver */
 }
@@ -288,14 +288,14 @@ h2 {
 
 
 .pos-5 {
-	grid-area: 18 / 22 / 24 / 43;
+	grid-area: 16 / 22 / 22 / 43;
 	z-index: -999;
 	/* makeup */
 }
 
 
 .pos-6 {
-	grid-area: 29 / 4 / 40 / 22;
+	grid-area: 32 / 4 / 40 / 22;
 	/* bike */
 }
 
@@ -313,7 +313,7 @@ h2 {
 }
 
 .pos-9 {
-	grid-area: 22 / 32 / 30 / 49;
+	grid-area: 20 / 32 / 26 / 49;
 	z-index: -9999;
 	/* bag */
 }
