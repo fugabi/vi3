@@ -509,8 +509,8 @@ h2 {
 	
 	.grid--img .grid__item-img {
 		flex: none;
-		width: calc(100% + 100px);
-		height: calc(100% + 100px);
+		width: calc(100% + 50px);
+		height: calc(100% + 50px);
 		will-change: transform;
 	}
 
