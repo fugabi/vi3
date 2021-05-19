@@ -6390,9 +6390,9 @@ var Grid = /*#__PURE__*/function () {
           from: 'center'
         }
       }, 0).to(this.items, {
-        duration: 3,
+        duration: 4,
         ease: 'Power1.easeOut',
-        opacity: 0.8,
+        opacity: 0.7,
         stagger: {
           amount: 0.6,
           grid: 'auto',
