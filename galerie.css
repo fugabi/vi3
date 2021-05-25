@@ -1,4 +1,4 @@
- /* * { outline:solid 1px red}  */
+ * { outline:solid 1px red} 
 
 
 *,
@@ -32,11 +32,11 @@ html, body {
 
 
 h1 {
-    font-size: 9vh;
+    font-size: 7vw;
     text-align: center;
 }
 h3 {
-    font-size: 5vh;
+    font-size: 5vw;
     text-align: center;
 }
 
@@ -54,6 +54,64 @@ p {
 
 
 
+
+
+/*! locomotive-scroll v3.5.4 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth {
+	overflow: hidden; }
+  
+  html.has-scroll-dragging {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; }
+  
+  .has-scroll-smooth body {
+	overflow: hidden; }
+  
+  .has-scroll-smooth [data-scroll-container] {
+	min-height: 100vh; }
+  
+  .c-scrollbar {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 12px;
+	height: 100vh;
+	transform-origin: center right;
+	transition: transform 0.3s, opacity 0.3s;
+	opacity: 0; }
+	.c-scrollbar:hover {
+	  transform: scaleX(1.45); }
+	.c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+	  opacity: 1; }
+  
+  .c-scrollbar_thumb {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: rgb(253, 2, 2);
+	opacity: 0.7;
+	width: 8px;
+	border-radius: 10px;
+	/* margin: 2px; */
+	cursor: -webkit-grab;
+	cursor: grab; }
+	.has-scroll-dragging .c-scrollbar_thumb {
+	  cursor: -webkit-grabbing;
+	  cursor: grabbing; }
+
+
+
+
+
+
+
+
+
+
+
+
  .container {
 	 background: #f7f3f3;
 }
@@ -61,11 +119,11 @@ p {
 
 
  .container .hero {
-	 display: flex;
+	 /* display: flex; */
 	 /* grid-template-columns: 20% 80%; */
 	 /* height: 100vh; */
 }
- .container .hero .copy {
+ /* .container .hero .copy {
 	 display: grid;
 	 align-content: center;
 	 padding: 0 1rem;
@@ -85,11 +143,11 @@ p {
 	 font-size: 4.5vmin;
 	 display: block;
 	 padding: 8px 0;
-}
- .container .hero .image-wrapper {
+} */
+ /* .container .hero .image-wrapper {
 	 height: 100vh;
 	 width: 100%;
-}
+} */
  .container .hero .image-wrapper img {
 	 height: 100%;
 	 width: 100%;
