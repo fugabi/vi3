@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PROCESS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/process.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+
+        <section class="intro">
+            <div class="process">
+              <h1>STEPS WE GO </h1>
+              <p>DAS ERSTGESPRÄCH</p>
+              <p>Was erhoffst du dir? Wie kann ich dich unterstützen? Wir hören I sehen uns via Telefon oder Zoom Call. Dauer 30 – 45 Minuten. Kosten keine.</p>
+              <h1>ETAPPEN UNSERER ZUSAMMENARBEIT</h1>
+            </div>
+          </section>
+          
+          <section class="timeline">
+            <ul>
+              <li>
+                <div>
+                  <time>WAS</time>Die Klärungsphase dient der Orientierung. Was bewegt dich? Was ist dein Thema? Was wünschst du dir? Was soll sich verändern?
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>WANN.WO.WIE</time>Mechanismen werden erkennbar. Welche Werte, Muster, Rollen, Emotionen … beeinflussen dein Thema. Wir finden heraus, wann sie wo und wie wirksam sind.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>ICH. DU. WIR</time>Deine innere Welt im Kontext zu deiner Lebenswelt. Eine systemische Betrachtung mit stimmiger Übersetzung für deine Situation, ist das Ziel.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>NEUE IDEEN</time>Du nimmst andere Perspektiven ein, erkennst neue Facetten und Möglichkeiten. Du entwickelst konkrete Handlungsziele.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>NEUE KRAFT</time>Schritt für Schritt kommst du deinen Zielen und Wünschen näher, innere und äussere Kräfte entfalten sich.
+                </div>
+              </li>
+              
+            </ul>
+          </section>
+         
+          <p>THE CLOTHING Die Kleider können an jeder Phase eingebunden werden. Alles kann. Nichts muss. </p>
+          <h2>WIRKLICHKEIT: 
+            INNERE ERKENNEN. ÄUSSERE VERÄNDERN. 
+            </h2>
+            <h2>WERTVOLL JEDER DEINER SCHRITTE. TAKE, the first Step. (Link Kontakt)
+            </h2>
+        
+        <script>
+(function () {
+  "use strict";
+
+  // define variables
+  var items = document.querySelectorAll(".timeline li");
+
+  // check if an element is in viewport
+  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function callbackFunc() {
+    for (var i = 0; i < items.length; i++) {
+      if (isElementInViewport(items[i])) {
+        items[i].classList.add("in-view");
+      }
+    }
+  }
+
+  // listen for events
+  window.addEventListener("load", callbackFunc);
+  window.addEventListener("resize", callbackFunc);
+  window.addEventListener("scroll", callbackFunc);
+})();
+
+
+
+
+        </script>
+    </body>
+</html>

@@ -11,6 +11,10 @@
 		<!-- <link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css"> -->
 		<link rel="stylesheet" type="text/css" href="base.css">
 
+	
+
+
+
 		<script>document.documentElement.className = "js";
 
 var supportsCssVars = function supportsCssVars() {
@@ -26,11 +30,74 @@ supportsCssVars() || alert("Please view this in a modern browser that supports C
 </head>
 	<body class="" >
 		
-	
+		<input type="checkbox" id="main-navigation-toggle" class="btn btn--close" title="Toggle main navigation" />
+		<label for="main-navigation-toggle">
+		  <span></span>
+		</label>
+		
+		<nav id="main-navigation" class="nav-main">
+		  <ul class="menu">
+			<li class="menu__item">
+				<a class="menu__link" href="index.html">HOME</a>
+				
+			  </li>
+			<li class="menu__item">
+				<a class="menu__link" href="">COACHING</a>
+				<ul class="submenu">
+				  <li class="menu__item">
+					<a class="menu__link" href="concept.html">Concept</a>
+				  </li>
+				  <li class="menu__item">
+					<a class="menu__link" href="methods.html">Methods</a>
+				  </li>
+				  <li class="menu__item">
+					<a class="menu__link" href="process.html">Process</a>
+					<li class="menu__item">
+						<a class="menu__link" href="#0">Impulsfragen</a>
+					  </li>
+				  </li>
+				</ul>
+			  </li>
+
+			  <li class="menu__item">
+				<a class="menu__link" href="#0">STUDIO</a>
+				<ul class="submenu">
+				  <li class="menu__item">
+					<a class="menu__link" href="galerie.html">GALERIE</a>
+				  </li>
+				   
+				</ul>
+			  </li>
+
+			  <li class="menu__item">
+				<a class="menu__link" href="#0">PORTFOLIO</a>
+				<ul class="submenu">
+				  <li class="menu__item">
+					<a class="menu__link" href="philo.html">Philosophie</a>
+				  </li>
+				  <li class="menu__item">
+					<a class="menu__link" href="about.html">About me</a>
+				  </li>
+				  <li class="menu__item">
+					<a class="menu__link" href="kundenstimmen.html">Kunden:innen</a>
+				  </li>
+				</ul>
+			  </li>
+		
+			
+			<li class="menu__item">
+			  <a class="menu__link" href="#0">MEET ME</a>
+			</li>
+		  </ul>
+		</nav>
+		
+		
+
+
 		<main>
 		
 			<!-- <div class="message">Please view this demo on a desktop to see the effect.</div> -->
-			<div class="frame">
+			<!-- <div class="frame">
 				<div class="frame__title-wrap">
 					<h1 class="frame__title">COACHING NEU GEDACHT</h1>
 				</div>
@@ -39,11 +106,11 @@ supportsCssVars() || alert("Please view this in a modern browser that supports C
 					<a href="galerie.html" style="color:purple;">Studio</a>
 					<a href="#">Portfolio</a>
 					<a href="#">Meet Me</a>
-				</div>
+				</div> -->
 				<!-- <div class="frame__demos">
 					<a href="#" class="frame__demo frame__demo--current" style="position: fixed;">MeetMe</a>
 				</div> -->
-			</div>
+			<!-- </div> -->
 			<div class="content">
 				<div class="grid">
 
@@ -56,7 +123,7 @@ supportsCssVars() || alert("Please view this in a modern browser that supports C
 					
 					<div class="grid__item pos-4" ><div class="grid__item-img landing-img" style="background-image:url(img/landing/four.jpg);"></div></div>
 
-					<div class="grid__item pos-5" ><div class="grid__item-img landing-img" style="background-image:url(img/landing/five.jpg);"></div></div>
+					<!-- <div class="grid__item pos-5" ><div class="grid__item-img landing-img" style="background-image:url(img/landing/five.jpg);"></div></div> -->
 
 					<div class="grid__item pos-6" ><div class="grid__item-img landing-img" style="background-image:url(img/landing/six.jpg); "></div></div>
 
@@ -67,21 +134,20 @@ supportsCssVars() || alert("Please view this in a modern browser that supports C
 					<div class="grid__item pos-9" ><div class="grid__item-img landing-img" style="background-image:url(img/landing/nine.jpg);"></div></div> 
 
 
+				
+
 					
 					
-					<div class="grid__item pos-1t"><h2 style="font-size: 1.5em;">text1</h2> 
+					<div class="pos-1t"> <a href="kundenstimmen.html"> <h3>VIELE FORMEN. <br> VON WEIBLICHKEIT.</h3></a> 
 					</div>
-
+					<div class="pos-2t"><h3>LEBEN FREUDE. <br> VOR ALTER KONVENTIONEN.</h3> </div>
+					<div class="pos-3t"><h3>WERTE. ECHTE. <br> KOMPLIMENTE. </h3></div>
+					<div class="pos-4t" ><h3>SELBST. <br> SICHER. <br> ALLE ROLLEN.</h3> </div>
+					<div class="pos-5t" ><h3>FRAU. <br> MANN. <br> ICH. <br> ÜBERZEUGE.</h3> </div>
+					<div class="pos-6t" ><h3>EINE ENTSCHEIDUNG. <br> FÜHLBAR ICH.</h3> </div>
+					<div class="pos-7t" ><h3>ICH BIN. STOLZ. <br> AUF MICH.</h3> </div>
 					
-					<div class="grid__item pos-2t"><h2>text2</h2> </div>
-
-					
-					<div class="grid__item pos-3t"><h2>text3</h2></div>
-					
-					
-					<div class="grid__item pos-4t" ><h2>text4</h2> </div>
-					
-
+				
 
 
 				</div>
@@ -95,26 +161,44 @@ supportsCssVars() || alert("Please view this in a modern browser that supports C
 
 	<div class="parent">
   
-		<div class="img" style="background: url(https://unsplash.it/800/300) center center no-repeat; background-size: cover;"></div>
+		<!-- <div class="img" style="background: url(img/landing/ValueCoachingClothing.jpg) center no-repeat;"></div> -->
+		<img src="/img/landing/ValueCoachingClothing.jpg" style="width:100%; max-width: 600px; padding: 2em; height: auto; border-radius: 50%;" alt="">
 		
 		<div class="txt">
-		  <h2>TEXT</h2>
-		  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui doloremque sed vero mollitia vel alias expedita culpa illo dolorum aliquid fuga laudantium delectus iusto blanditiis deleniti beatae quasi, adipisci repudiandae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, consequatur delectus magni eos dolore quaerat incidunt blanditiis! Consectetur voluptatum fugiat inventore cupiditate a, possimus numquam repudiandae qui laboriosam repellendus porro! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolores nisi illo cumque eaque labore, voluptatum tempora quod quo id voluptates sit fugiat voluptate praesentium amet rem sequi quibusdam fugit!</p>
+		  <h2>THE VALUE OF COACHING. CLOTHING.</h2>
+		  <p>VIA IDA eröffnet neue Wege, erweitert den Blickwinkel. <br> VIA IDA verwendet Kleider als ergänzenden methodischen Ansatz im Coachingprozess.</p>
+		  <h2>EINE TRAGENDE <a href="methods.html">TRANSFORMATION</a></h2>
 		</div>
 
 	</div>
 	<div class="parent " style="background-color: black;">
 
 		<div class="txt" style="color: white;">
-			<h2>TEXT</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui doloremque sed vero mollitia vel alias expedita culpa illo dolorum aliquid fuga laudantium delectus iusto blanditiis deleniti beatae quasi, adipisci repudiandae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, consequatur delectus magni eos dolore quaerat incidunt blanditiis! Consectetur voluptatum fugiat inventore cupiditate a, possimus numquam repudiandae qui laboriosam repellendus porro! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolores nisi illo cumque eaque labore, voluptatum tempora quod quo id voluptates sit fugiat voluptate praesentium amet rem sequi quibusdam fugit!</p>
+			<h2>THE VALUE OF CHANGE</h2>
+			<p>VIA IDA ist überzeugt, Veränderung macht erst Sinn, wenn sie deiner inneren Wirklichkeit folgt. Deine Wahrheiten sind essentiell. Mit diesem Bewusstsein fällt es dir leichter deine wirklichen Ziele, Wünsche, Träume zu erkennen und zu verwirklichen.
+			</p>
+			<h2>WAHRHEITEN FINDEN – <a href="concept.html">WIRKLICHKEIT GESTATLEN</a></h2>
 		  </div>
 		
-		
-		<div class="img" style="background: url(https://unsplash.it/800/300) center center no-repeat; background-size: cover;"></div>
+		  <img src="/img/landing/ValueofChange.jpg" style="width:100%; max-width: 600px; padding: 2em; height: auto; border-radius: 50%;" alt="">
+
+		<!-- <div class="img" style="background: url(img/landing/ValueofChange.jpg) center center no-repeat; background-size: cover;"></div> -->
 	  </div>
 
+	  <div class="parent">
+  
+		<img src="/img/landing/BildEndeLandingPage.jpg" style="width:100%; max-width: 600px; padding: 2em; height: auto; " alt="">
 
+		<!-- <div class="img" style="background: url(img/landing/BildEndeLandingPage.jpg) center center no-repeat; background-size: cover;"></div> -->
+		
+		<div class="txt">
+		  <h2>THE UNIQUENESS OF CHANGE: YOURSELF</h2>
+		  <p>Deinen Wahrheiten und Überzeugungen sichtbar Bedeutung geben. Deinen Talenten, Wünschen, Träumen sichtbar Raum geben.</p>
+		  <h2>WERDE SICHTBAR. OPEN THE SPACE. </h2>
+		  <h2> <a href="kontakt.html"> TELL ME.</a> </h2>
+		</div>
+
+	</div>
 
 
 

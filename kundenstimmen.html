@@ -7,93 +7,292 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>KUNDENSTIMMEN</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="kundenstimmen.css">
+        <link rel="stylesheet" href="base.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        
+        <input type="checkbox" id="main-navigation-toggle" class="btn btn--close" title="Toggle main navigation" />
+        <label for="main-navigation-toggle">
+          <span></span>
+        </label>
+        
+        <nav id="main-navigation" class="nav-main">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">HOME</a>
+              
+              </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">COACHING</a>
+            <ul class="submenu">
+              <li class="menu__item">
+              <a class="menu__link" href="concept.html">Concept</a>
+              </li>
+              <li class="menu__item">
+              <a class="menu__link" href="methods.html">Methods</a>
+              </li>
+              <li class="menu__item">
+              <a class="menu__link" href="process.html">Process</a>
+              <li class="menu__item">
+                <a class="menu__link" href="#0">Impulsfragen</a>
+                </li>
+              </li>
+            </ul>
+            </li>
+    
+            <li class="menu__item">
+            <a class="menu__link" href="#0">STUDIO</a>
+            <ul class="submenu">
+              <li class="menu__item">
+              <a class="menu__link" href="galerie.html">GALERIE</a>
+              </li>
+               
+            </ul>
+            </li>
+    
+            <li class="menu__item">
+            <a class="menu__link" href="#0">PORTFOLIO</a>
+            <ul class="submenu">
+              <li class="menu__item">
+              <a class="menu__link" href="philo.html">Philosophie</a>
+              </li>
+              <li class="menu__item">
+              <a class="menu__link" href="about.html">About me</a>
+              </li>
+              <li class="menu__item">
+              <a class="menu__link" href="#0">Kunden:innen</a>
+              </li>
+            </ul>
+            </li>
+        
+          
+          <li class="menu__item">
+            <a class="menu__link" href="#0">MEET ME</a>
+          </li>
+          </ul>
+        </nav>
+        
 
-        <header>
-            <h1>KUNDENSTIMMEN</h1>
-          </header>
-          <div class="band">
-          <!--   <div class="item-1">
-              <a href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852" class="card">
-                <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg);"></div>
-                <article>
-                  <h1>International Artist Feature: Malaysia</h1>
-                  <span>Mary Winkler</span>
-                </article>
-              </a>
-            </div> -->
-            <div class="item-2">
-              <span class="card">
-                <div class="thumb" style="background-image: url(https://picsum.photos/200);"></div>
-                <article>
-                  <!-- <h1>How to Conduct Remote Usability Testing</h1> -->
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi delectus officia ea tempore cum, cupiditate dolore omnis impedit recusandae non, corrupti dicta consectetur, quo fugit nemo cumque doloremque quibusdam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, corrupti. Ducimus sit labore atque molestias perferendis, ullam fuga quis placeat deleniti, rerum saepe ab nam veniam sint nobis. Harum, dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi at, error doloremque mollitia tempora rem architecto vitae magnam cum, autem velit molestias atque iure provident labore explicabo sequi quia ratione!</p>
-                 
-                </article>
-              </span>
-            </div>
-            <div class="item-3">
-                <span class="card">
-                    <div class="thumb" style="background-image: url(https://picsum.photos/200);"></div>
-                    <article>
-                      <!-- <h1>How to Conduct Remote Usability Testing</h1> -->
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi delectus officia ea tempore cum, cupiditate dolore omnis impedit recusandae non, corrupti dicta consectetur, quo fugit nemo cumque doloremque quibusdam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, corrupti. Ducimus sit labore atque molestias perferendis, ullam fuga quis placeat deleniti, rerum saepe ab nam veniam sint nobis. Harum, dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi at, error doloremque mollitia tempora rem architecto vitae magnam cum, autem velit molestias atque iure provident labore explicabo sequi quia ratione!</p>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi delectus officia ea tempore cum, cupiditate dolore omnis impedit recusandae non, corrupti dicta consectetur, quo fugit nemo cumque doloremque quibusdam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, corrupti. Ducimus sit labore atque molestias perferendis, ullam fuga quis placeat deleniti, rerum saepe ab nam veniam sint nobis. Harum, dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi at, error doloremque mollitia tempora rem architecto vitae magnam cum, autem velit molestias atque iure provident labore explicabo sequi quia ratione!</p>
-                     
-                    </article>
-                  </span>
-            </div>
-            <div class="item-4">
-                <span class="card">
-                    <div class="thumb" style="background-image: url(https://picsum.photos/200);"></div>
-                    <article>
-                      <!-- <h1>How to Conduct Remote Usability Testing</h1> -->
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi delectus officia ea tempore cum, cupiditate dolore omnis impedit recusandae non, corrupti dicta consectetur, quo fugit nemo cumque doloremque quibusdam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, corrupti. Ducimus sit labore atque molestias perferendis, ullam fuga quis placeat deleniti, rerum saepe ab nam veniam sint nobis. Harum, dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi at, error doloremque mollitia tempora rem architecto vitae magnam cum, autem velit molestias atque iure provident labore explicabo sequi quia ratione!</p>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi delectus officia ea tempore cum, cupiditate dolore omnis impedit recusandae non, corrupti dicta consectetur, quo fugit nemo cumque doloremque quibusdam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, corrupti. Ducimus sit labore atque molestias perferendis, ullam fuga quis placeat deleniti, rerum saepe ab nam veniam sint nobis. Harum, dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi at, error doloremque mollitia tempora rem architecto vitae magnam cum, autem velit molestias atque iure provident labore explicabo sequi quia ratione!</p>
-                     
-                    </article>
-                  </span>
-            </div>
-            <div class="item-5">
-                <span class="card">
-                    <div class="thumb" style="background-image: url(https://picsum.photos/200);"></div>
-                    <article>
-                      <!-- <h1>How to Conduct Remote Usability Testing</h1> -->
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi delectus officia ea tempore cum, cupiditate dolore omnis impedit recusandae non, corrupti dicta consectetur, quo fugit nemo cumque doloremque quibusdam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, corrupti. Ducimus sit labore atque molestias perferendis, ullam fuga quis placeat deleniti, rerum saepe ab nam veniam sint nobis. Harum, dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi at, error doloremque mollitia tempora rem architecto vitae magnam cum, autem velit molestias atque iure provident labore explicabo sequi quia ratione!</p>
-                     
-                    </article>
-                  </span>
-            </div>
-            <div class="item-6">
-                <span class="card">
-                    <div class="thumb" style="background-image: url(https://picsum.photos/200);"></div>
-                    <article>
-                      <!-- <h1>How to Conduct Remote Usability Testing</h1> -->
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi delectus officia ea tempore cum, cupiditate dolore omnis impedit recusandae non, corrupti dicta consectetur, quo fugit nemo cumque doloremque quibusdam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, corrupti. Ducimus sit labore atque molestias perferendis, ullam fuga quis placeat deleniti, rerum saepe ab nam veniam sint nobis. Harum, dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi at, error doloremque mollitia tempora rem architecto vitae magnam cum, autem velit molestias atque iure provident labore explicabo sequi quia ratione!</p>
-                     
-                    </article>
-                  </span>
-            </div>
-            <div class="item-7">
-                <span class="card">
-                    <div class="thumb" style="background-image: url(https://picsum.photos/200);"></div>
-                    <article>
-                      <!-- <h1>How to Conduct Remote Usability Testing</h1> -->
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi delectus officia ea tempore cum, cupiditate dolore omnis impedit recusandae non, corrupti dicta consectetur, quo fugit nemo cumque doloremque quibusdam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, corrupti. Ducimus sit labore atque molestias perferendis, ullam fuga quis placeat deleniti, rerum saepe ab nam veniam sint nobis. Harum, dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi at, error doloremque mollitia tempora rem architecto vitae magnam cum, autem velit molestias atque iure provident labore explicabo sequi quia ratione!</p>
-                     
-                    </article>
-                  </span>
+
+  <h1 style="text-align: center; font-size: 3vw; padding: 2em; margin: 0;">THE VALUE OF COACHING</h1>
+
+
+        <div class="ksgrid">
+           
+          <div class="item photo">
+            <div class="kscontent">
+            
+              <img class="photothumb" src="img/kundenstimmen/Maria Zeichnung.jpg">
+              <div class="desc">
+                <p>THEMA: WIE KANN ICH IM BERUF MEHR ICH SELBST SEIN?
+                  ESSENCE: ICH KENNE MEIN WARUM. ES FÄLLT LEICHTER ZU ÜBERZEUGEN, WENN INNEN- UND AUSSENSICHT ZUSAMMENPASSEN.
+                  
+                  THE VALUE OF CHANGE:
+                  
+                  „Wenn ich mich erinnere, wie ich für die Arbeit stets Businesshose und Blazer trug und sich Entscheidungen, Verhandlungen, Kommunikation trotz Erfolg schwer anfühlten (…). Der Anzug war im Coaching ein Symbol. Er symbolisierte eine Perspektive, und machte einiges deutlich (…) machte bewusst, dass ich nicht nur in Punkto Kleidung meinen männlichen Kollegen glich (…) habe mich auch an Verhaltensweisen (…) der Männer orientiert. Es fühlte sich verkehrt an, nicht ich selbst. Im Coaching war mein Thema: Wie kann ich im Beruf mehr ich selbst sein? Was heisst Frausein? Was verbinde ich persönlich mit Frausein (…) und auch wann es für mich passt, den „gleichen“ Anzug (wie die Kollegen) tragen. Ich habe kein Bedürfnis, wie ein Mann zu wirken oder mich wie einer anzuziehen, aber ich habe gern die Möglichkeit, damit zu spielen (…) Im Coaching haben wir ein Vorgehen erarbeitet, wie ich meine Sicht, auch die Weibliche in der Arbeit kommuniziere und umsetze. (…) Das Coaching inklusive der Kleider war für mich eine andere Art der Herangehensweise ein Problem zu betrachten und einen Lösungsweg zu erarbeiten. Ich habe erfahren, dass wie ich mich kleide, auch meinen Standpunkt, mein Warum verdeutlicht (…) und es fällt leichter zu überzeugen, wenn Innen- und Aussensicht zusammen passen“. (Maria)
+                  
+                  </p>
+              </div>
             </div>
           </div>
+         
+            <div class="item photo">
+              <div class="kscontent">
+                <!-- <div class="title">
+                  <h3>2: Photo</h3>
+                </div> -->
+                <img class="photothumb" src="img/kundenstimmen/Elisabeth.jpg">
+                <div class="desc">
+                  <p>THEMA: WERT, VERSAGEN. WENN ICH VERSAGE, BIN ICH WERTLOS.
+                    ESSENCE: ICH BIN STOLZ AUF MEINE ENTWICKLUNG. ICH WEISS, WO WERT BEGINNT. 
+                    
+                    THE VALUE OF CHANGE:
+                    
+                    Nach einer körperlichen Erkrankung war ich mit mir und meinem Körper unzufrieden. Je mehr ich dachte, du solltest doch zufrieden und glücklich sein, desto schlechter fühlte ich mich. Mein Themen: Wert, Versagen. „Wenn ich versage, bin ich wertlos“. Dieser Satz wurde mir im Coaching vollends bewusst. Auch, als wir uns meine Kleider anschauten. Kleider, die alle auf Nummer sicher gehen, sicher nicht versagen (…). Die Zauberformel im Coaching, Wert fängt mit Beachtung an. Indem ich also unbewusst versuchte Versagen zu vermeiden, habe ich gleichzeitig immer das Versagen beachtet. Im Coaching konnte ich üben meine Stärken (und Erfolge) zu sehen, denn sie waren ja da, allerdings unbeachtet (erhielten keinen Wert), auch versuche ich mich mehr zu belohnen, mir mehr zu gönnen, mich selbst mehr zu loben (…) und wenn Dinge nicht so gelingen, wie ich es gerne sähe, versuche ich den Fokus auf die stärkende Dinge zu lenken, und trainiere darauf die Konzentration zu halten. Dabei helfen mir auch innere Bilder, die Anerkennung und Wert transportieren. Falle ich in alter Muster, definiere ich mich wieder nur über leisten und funktionieren, kann ich auch mit meinen Kleidern meine Aufmerksamkeit und Befindlichkeit lenken, gerade auf mein Körpergefühl bezogen sehr gut. Ich denke, ich bin schon stolz auf mich, und auch mein Kleidungsstil ist mutiger, selbstbewusster. Es fällt auf, aber nicht unangenehm.“ (Elisabeth)
+                    
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="item photo">
+              <div class="kscontent">
+               
+                <img class="photothumb" src="img/kundenstimmen/Johanna .jpg">
+                <div class="desc">
+                  <p>THEMA: WERT, VERSAGEN. WENN ICH VERSAGE, BIN ICH WERTLOS.
+                    ESSENCE: ICH BIN STOLZ AUF MEINE ENTWICKLUNG. ICH WEISS, WO WERT BEGINNT. 
+                    
+                    THE VALUE OF CHANGE:
+                    
+                    Nach einer körperlichen Erkrankung war ich mit mir und meinem Körper unzufrieden. Je mehr ich dachte, du solltest doch zufrieden und glücklich sein, desto schlechter fühlte ich mich. Mein Themen: Wert, Versagen. „Wenn ich versage, bin ich wertlos“. Dieser Satz wurde mir im Coaching vollends bewusst. Auch, als wir uns meine Kleider anschauten. Kleider, die alle auf Nummer sicher gehen, sicher nicht versagen (…). Die Zauberformel im Coaching, Wert fängt mit Beachtung an. Indem ich also unbewusst versuchte Versagen zu vermeiden, habe ich gleichzeitig immer das Versagen beachtet. Im Coaching konnte ich üben meine Stärken (und Erfolge) zu sehen, denn sie waren ja da, allerdings unbeachtet (erhielten keinen Wert), auch versuche ich mich mehr zu belohnen, mir mehr zu gönnen, mich selbst mehr zu loben (…) und wenn Dinge nicht so gelingen, wie ich es gerne sähe, versuche ich den Fokus auf die stärkende Dinge zu lenken, und trainiere darauf die Konzentration zu halten. Dabei helfen mir auch innere Bilder, die Anerkennung und Wert transportieren. Falle ich in alter Muster, definiere ich mich wieder nur über leisten und funktionieren, kann ich auch mit meinen Kleidern meine Aufmerksamkeit und Befindlichkeit lenken, gerade auf mein Körpergefühl bezogen sehr gut. Ich denke, ich bin schon stolz auf mich, und auch mein Kleidungsstil ist mutiger, selbstbewusster. Es fällt auf, aber nicht unangenehm.“ (Elisabeth)
+                    
+                    </p>
+                </div>
+              </div>
+            </div>
+           
+                      
+            <div class="item photo">
+              <div class="kscontent">
+                
+                <img class="photothumb" src="img/kundenstimmen/Judith .jpg">
+                <div class="desc">
+                  <p>THEMA: WERT, VERSAGEN. WENN ICH VERSAGE, BIN ICH WERTLOS.
+                    ESSENCE: ICH BIN STOLZ AUF MEINE ENTWICKLUNG. ICH WEISS, WO WERT BEGINNT. 
+                    
+                    THE VALUE OF CHANGE:
+                    
+                    Nach einer körperlichen Erkrankung war ich mit mir und meinem Körper unzufrieden. Je mehr ich dachte, du solltest doch zufrieden und glücklich sein, desto schlechter fühlte ich mich. Mein Themen: Wert, Versagen. „Wenn ich versage, bin ich wertlos“. Dieser Satz wurde mir im Coaching vollends bewusst. Auch, als wir uns meine Kleider anschauten. Kleider, die alle auf Nummer sicher gehen, sicher nicht versagen (…). Die Zauberformel im Coaching, Wert fängt mit Beachtung an. Indem ich also unbewusst versuchte Versagen zu vermeiden, habe ich gleichzeitig immer das Versagen beachtet. Im Coaching konnte ich üben meine Stärken (und Erfolge) zu sehen, denn sie waren ja da, allerdings unbeachtet (erhielten keinen Wert), auch versuche ich mich mehr zu belohnen, mir mehr zu gönnen, mich selbst mehr zu loben (…) und wenn Dinge nicht so gelingen, wie ich es gerne sähe, versuche ich den Fokus auf die stärkende Dinge zu lenken, und trainiere darauf die Konzentration zu halten. Dabei helfen mir auch innere Bilder, die Anerkennung und Wert transportieren. Falle ich in alter Muster, definiere ich mich wieder nur über leisten und funktionieren, kann ich auch mit meinen Kleidern meine Aufmerksamkeit und Befindlichkeit lenken, gerade auf mein Körpergefühl bezogen sehr gut. Ich denke, ich bin schon stolz auf mich, und auch mein Kleidungsstil ist mutiger, selbstbewusster. Es fällt auf, aber nicht unangenehm.“ (Elisabeth)
+                    </p>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item photo">
+              <div class="kscontent">
+                
+                <img class="photothumb" src="img/kundenstimmen/Karl 1.jpg">
+                <div class="desc">
+                  <p>THEMA: WERT, VERSAGEN. WENN ICH VERSAGE, BIN ICH WERTLOS.
+                    ESSENCE: ICH BIN STOLZ AUF MEINE ENTWICKLUNG. ICH WEISS, WO WERT BEGINNT. 
+                    
+                    THE VALUE OF CHANGE:
+                    
+                    Nach einer körperlichen Erkrankung war ich mit mir und meinem Körper unzufrieden. Je mehr ich dachte, du solltest doch zufrieden und glücklich sein, desto schlechter fühlte ich mich. Mein Themen: Wert, Versagen. „Wenn ich versage, bin ich wertlos“. Dieser Satz wurde mir im Coaching vollends bewusst. Auch, als wir uns meine Kleider anschauten. Kleider, die alle auf Nummer sicher gehen, sicher nicht versagen (…). Die Zauberformel im Coaching, Wert fängt mit Beachtung an. Indem ich also unbewusst versuchte Versagen zu vermeiden, habe ich gleichzeitig immer das Versagen beachtet. Im Coaching konnte ich üben meine Stärken (und Erfolge) zu sehen, denn sie waren ja da, allerdings unbeachtet (erhielten keinen Wert), auch versuche ich mich mehr zu belohnen, mir mehr zu gönnen, mich selbst mehr zu loben (…) und wenn Dinge nicht so gelingen, wie ich es gerne sähe, versuche ich den Fokus auf die stärkende Dinge zu lenken, und trainiere darauf die Konzentration zu halten. Dabei helfen mir auch innere Bilder, die Anerkennung und Wert transportieren. Falle ich in alter Muster, definiere ich mich wieder nur über leisten und funktionieren, kann ich auch mit meinen Kleidern meine Aufmerksamkeit und Befindlichkeit lenken, gerade auf mein Körpergefühl bezogen sehr gut. Ich denke, ich bin schon stolz auf mich, und auch mein Kleidungsstil ist mutiger, selbstbewusster. Es fällt auf, aber nicht unangenehm.“ (Elisabeth)
+                    
+                    </p>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="item photo">
+              <div class="kscontent">
+               
+                <img class="photothumb" src="img/kundenstimmen/Karl 2.jpg">
+                <div class="desc">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odit temporibus obcaecati repellendus, illum vitae expedita accusamus doloribus ab tempora necessitatibus perspiciatis ex incidunt minima a, corrupti quam. Officia, nemo.
+                    </p>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="item photo">
+              <div class="kscontent">
+              
+                <img class="photothumb" src="img/kundenstimmen/Monika .jpg">
+                <div class="desc">
+                  <p>THEMA: WERT, VERSAGEN. WENN ICH VERSAGE, BIN ICH WERTLOS.
+                    ESSENCE: ICH BIN STOLZ AUF MEINE ENTWICKLUNG. ICH WEISS, WO WERT BEGINNT. 
+                    
+                    THE VALUE OF CHANGE:
+                    
+                    Nach einer körperlichen Erkrankung war ich mit mir und meinem Körper unzufrieden. Je mehr ich dachte, du solltest doch zufrieden und glücklich sein, desto schlechter fühlte ich mich. Mein Themen: Wert, Versagen. „Wenn ich versage, bin ich wertlos“. Dieser Satz wurde mir im Coaching vollends bewusst. Auch, als wir uns meine Kleider anschauten. Kleider, die alle auf Nummer sicher gehen, sicher nicht versagen (…). Die Zauberformel im Coaching, Wert fängt mit Beachtung an. Indem ich also unbewusst versuchte Versagen zu vermeiden, habe ich gleichzeitig immer das Versagen beachtet. Im Coaching konnte ich üben meine Stärken (und Erfolge) zu sehen, denn sie waren ja da, allerdings unbeachtet (erhielten keinen Wert), auch versuche ich mich mehr zu belohnen, mir mehr zu gönnen, mich selbst mehr zu loben (…) und wenn Dinge nicht so gelingen, wie ich es gerne sähe, versuche ich den Fokus auf die stärkende Dinge zu lenken, und trainiere darauf die Konzentration zu halten. Dabei helfen mir auch innere Bilder, die Anerkennung und Wert transportieren. Falle ich in alter Muster, definiere ich mich wieder nur über leisten und funktionieren, kann ich auch mit meinen Kleidern meine Aufmerksamkeit und Befindlichkeit lenken, gerade auf mein Körpergefühl bezogen sehr gut. Ich denke, ich bin schon stolz auf mich, und auch mein Kleidungsstil ist mutiger, selbstbewusster. Es fällt auf, aber nicht unangenehm.“ (Elisabeth)
+                    
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item photo">
+              <div class="kscontent">
+              
+                <img class="photothumb" src="img/kundenstimmen/Nina .jpg">
+                <div class="desc">
+                  <p>THEMA: WARUM VERTAGE ICH VIELE DINGE IN MEINEM LEBEN AUF EINEN SPÄTEREN ZEITPUNKT.
+                    ESSENCE: SICH FÜR SICH ENTSCHEIDEN. SICHTBAR SEIN, SO WIE ICH FÜHLE, WIE ICH BIN.
+                    
+                    THE VALUE OF CHANGE:
+                    
+                    "Nach der Trennung (…). Es muss sich jetzt endlich etwas verändern. Mein Thema: Warum vertage ich viele Dinge in meinem Leben auf einen späteren Zeitpunkt, und lebe mehr in der Zukunft? Was heisst für mich sichtbar sein, was und wie will ich gesehen werden, daran habe wir im Coaching gearbeitet. (…) Ich war zunächst skeptisch, da Kleidung in meinem Umfeld keinen besonderen Ruf genoss. Ich war überrascht, ja, meine Kleider waren auch ein Spiegel meiner inneren Mechanismen. Durch sie wurden meine Vorstellungen, aber auch die Sichtweise anderer nachvollziehbarer. So waren mir viele meiner tollen Kleider zu schade, sie in meinem täglichen Leben zu tragen (…) und ich verstand, was es bedeutete, wenn mein Partner sagte, er mag nicht, wenn ein Kleidungsstück zu dominant sei (…). Das Coaching hat geholfen, dass sich mögen, auch mit einer Entscheidung zu tun hat, und dazu gehört für mich neuerdings, auch das Anziehen. Ich überlege, was ich womit kombiniere, welche Farben ich trage und mache mir bewusst, wie ich meinen Tag gestalte. Ob etwas dominant rüberkommt, ist mir zwar nicht egal. Doch wichtiger ist, ich möchte mit dem sichtbar sein, wie ich mich fühle, wie ich bin. Vor allem wurde es einfacher mich für etwas zu entscheiden und zu handeln, da ich besser spüre, was ich brauche, was wirklich ich will. Ich empfand die Atmosphäre frei, und es fiel mir leicht mich zu öffnen. Zudem haben die Fragen von Franziska geholfen meine Situation zu entwirren.“(Nina)
+                    
+                    </p>
+                </div>
+              </div>
+            </div>
+           
+          
+            <div class="item photo">
+              <div class="kscontent">
+              
+                <img class="photothumb" src="img/kundenstimmen/Viktoria.jpg ">
+                <div class="desc">
+                  <p>THEMA: EIGENSTÄNDIG AUFTRETEN
+                    ESSENCE: ICH FÜHLE MICH IN MEINEN ROLLEN SICHER, DENN ICH BIN ICH. ES MACHT AUCH SPASS ZU SEHEN, WER ICH ALLES BIN, UND SEIN KANN. 
+                    
+                    THE VALUE OF CHANGE:
+                    
+                    „Nachdem mein Mann plötzlich in der Öffentlichkeit stand, war dies auch für mich eine ziemliche Umstellung. In dieser Phase wurde ich auf VIA IDA aufmerksam, das Konzept gefiel mir. Mein Thema: Eigenständig auftreten, und nicht nur als Frau von (…) gesehen zu werden. Das Coaching half im ersten Schritt, dass ich mich mit der neuer Rolle besser identifizieren konnte, und dabei ich selbst bleiben zu können. Je mehr ich erkannte, warum ich es tue, desto leichter wurde es, ich selbst zu sein. Paradoxerweise je wohler ich mich in der Rolle fühlte, desto stärker spürte ich, dass es nicht nur eine Möglichkeit gibt, wirklich sich selbst zu sein, sondern mein Inneres viele Gesichter hat. Im zweiten Schritt begann die Arbeit mit den Kleidern. Wir haben die Kleider sorgfältig ausgewählt, damit sie genau dem entsprechen, wie ich mich sehe und auch dem, was ich nach Aussen vermitteln möchte. Viel ausprobiert, und das Styling auch noch mit viel guter Laune (…) Für einzelne Auftritte bereite ich mich strategisch vor, angefangen vom Friseur (…) bis zum Ankleiden, auch wieder mit Franziska. Wichtig ist mir, alles hat seine Zeit, seinen Platz. Dadurch muss ich mir nicht mehr so viele Gedanken machen. Dies gibt mir auch Sicherheit. Die Arbeit von Franziska, ein analytisches und zugleich ein intuitives Vorgehen. Alles in allem, ein tolle Sache“. Viktoria 
+                    </p>
+                </div>
+              </div>
+            </div>
+
+              
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p style="text-align: center; margin-top: 0; padding: 2em;">DAS BIST DU.
+            MIT DEINEM THEMA
+            MIT DEINER ESSENCE
+            MIT DEINEM WERT
+            
+            THE VALUE OF CHANGE: DU SELBST.
+            <a href="kontakt.html">It really can happen</a>
+            .</p>
+        </div>
+
+<p>
+  </p>
+
+          </div>
+          <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
+            <circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
+        </svg>
         
-        <script src="" async defer></script>
+        <script src="new.js"></script>
+
+<script>
+function resizeGridItem(item){
+  grid = document.getElementsByClassName("ksgrid")[0];
+  rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+  rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+  rowSpan = Math.ceil((item.querySelector('.kscontent').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+    item.style.gridRowEnd = "span "+rowSpan;
+}
+
+function resizeAllGridItems(){
+  allItems = document.getElementsByClassName("item");
+  for(x=0;x<allItems.length;x++){
+    resizeGridItem(allItems[x]);
+  }
+}
+
+function resizeInstance(instance){
+	item = instance.elements[0];
+  resizeGridItem(item);
+}
+
+window.onload = resizeAllGridItems();
+window.addEventListener("resize", resizeAllGridItems);
+
+allItems = document.getElementsByClassName("item");
+for(x=0;x<allItems.length;x++){
+  imagesLoaded( allItems[x], resizeInstance);
+}
+
+</script>
+
     </body>
 </html>
