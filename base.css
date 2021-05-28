@@ -465,13 +465,13 @@ p {
 }
 
 .pos-2 {
-	grid-area: 4 / 15 / 14 / 35;
+	grid-area: 4 / 15 / 13 / 35;
 	z-index: -5;
 	/* queen */
 }
 
 .pos-3 { 
-	grid-area: 6 / 36 / 17 / 46;
+	grid-area: 5 / 36 / 17 / 46;
 	z-index: -99;
 	/* diver */
 }
@@ -483,58 +483,68 @@ p {
 
 
 .pos-5 {
-	grid-area: 16 / 22 / 22 / 37;
+	grid-area: 18 / 24 / 22 / 37;
 	z-index: -999;
 	/* makeup */
 }
 
 
 .pos-6 {
-	grid-area: 32 / 4 / 38 / 22;
+	grid-area: 30 / 4 / 36 / 22;
 	/* bike */
 }
 
 .pos-7 {
-	grid-area: 39 / 10 / 46 / 32; 
+	grid-area: 40 / 9 / 47 / 26; 
 	/* woman sitting */
 }
 
 
 
 .pos-8 {
-	grid-area: 31 / 33 / 47 / 45;
+	grid-area: 30 / 34 / 43 / 46;
 	z-index: -99;
 	/* man walking */
 }
 
 .pos-9 {
-	grid-area: 20 / 32 / 26 / 46;
-	z-index: -9999;
+	grid-area: 22 / 36 / 26 / 46;
+	z-index: 999;
 	/* bag */
 }
 
 
-
-
 	.pos-1t {
-	grid-area: 13 / 7 / 20 / 18;
+	grid-area: 13 / 6 / 20 / 24;
 }
 
 	.pos-2t {
-	grid-area: 22 / 9 / 19 / 35;
+	grid-area: 18 / 22 / 24 / 45;
+	z-index: 999;
 }
 
 
 	.pos-3t {
-	grid-area: 16 / 47 / 26 / 44;
-	z-index: -998;
+	grid-area: 13 / 24 / 26 / 44;
+	z-index: 998;
 }
 
 	.pos-4t {
-	grid-area: 33 / 25 / 44 / 40;
-	z-index: -99;
+	grid-area: 30 / 24 / 44 / 40;
+	z-index: 99;
 }
-
+.pos-5t {
+	grid-area: 23 / 5 / 29 / 40;
+	z-index: 999;
+}
+	.pos-6t {
+	grid-area: 36 / 14 / 49 / 49;
+	z-index: 999;
+}
+	.pos-7t {
+	grid-area: 43 / 30 / 50 / 50;
+	z-index: 999;
+}
 
 
 
