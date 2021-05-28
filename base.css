@@ -101,7 +101,7 @@ a:focus {
 h1 {
 	color:rgba(233, 16, 16, 0.815);
 	font-weight: bold;
-	font-size: 3.5vw;
+	font-size: 2rem;
 	margin: 0; 
 }
 
@@ -110,8 +110,17 @@ h2 {
 	color:rgba(233, 16, 16, 0.815);
 }
 h3 {
-	font-size: .85rem;
+	font-size: 1.2rem;
 	color:rgba(233, 16, 16, 0.815);
+}
+
+@media screen and (max-width: 53em) {
+
+	h3 {
+		font-size: 12px;
+	}
+
+
 }
 
 p {
@@ -129,7 +138,7 @@ p {
 
 
 /* title styles */
-.home-title span{
+/* .home-title span{
     position: relative;
     overflow: hidden;
     display: block;
@@ -178,7 +187,7 @@ p {
 @keyframes a-ltr-before{
     0% {transform: translateX(0)}
     100% {transform: translateX(200%)}
-}
+} */
 
 
 
@@ -197,7 +206,7 @@ p {
 
 
 /* clouds */
-.cloud-text {
+/* .cloud-text {
 	
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;	
@@ -206,7 +215,7 @@ p {
 	background-attachment: unset;
 	background-position: 0%;
 	width: 100%;
-	/* margin: 10%; */
+	margin: 10%;
 	font-size: 12vw;
 	font-weight: bold;
 	animation: clouds-moving infinite 60s;
@@ -230,7 +239,7 @@ p {
 	position: relative;
 	font-size: 26px;
 	text-align: center;
-}
+} */
 
 
 
@@ -477,7 +486,7 @@ p {
 }
 
 .pos-4 {
-	grid-area: 17 / 5 / 23 / 20; 
+	grid-area: 17 / 12 / 23 / 27; 
 	/* tie */
 }
 
@@ -490,7 +499,7 @@ p {
 
 
 .pos-6 {
-	grid-area: 30 / 4 / 36 / 22;
+	grid-area: 31 / 6 / 36 / 22;
 	/* bike */
 }
 
@@ -508,7 +517,7 @@ p {
 }
 
 .pos-9 {
-	grid-area: 22 / 36 / 26 / 46;
+	grid-area: 21 / 34 / 25 / 44;
 	z-index: 999;
 	/* bag */
 }
@@ -519,7 +528,7 @@ p {
 }
 
 	.pos-2t {
-	grid-area: 18 / 22 / 24 / 45;
+	grid-area: 17 / 24 / 24 / 45;
 	z-index: 999;
 }
 
@@ -534,17 +543,20 @@ p {
 	z-index: 99;
 }
 .pos-5t {
-	grid-area: 23 / 5 / 29 / 40;
+	grid-area: 19 / 6 / 29 / 40;
 	z-index: 999;
 }
 	.pos-6t {
-	grid-area: 36 / 14 / 49 / 49;
+	grid-area: 36 / 6 / 49 / 49;
 	z-index: 999;
 }
 	.pos-7t {
 	grid-area: 43 / 30 / 50 / 50;
 	z-index: 999;
 }
+
+
+
 
 
 
@@ -826,35 +838,42 @@ p {
 
 	.pos-1 {
 		grid-area: 2 / 4 / 20 / 14;
+		/* haircut */
 	}
 	.pos-2 {
 		grid-area: 5 / 20 / 20 / 30;
+		/* queen */
 	}
 	.pos-3 {
 		grid-area: 3 / 38 / 26 / 43;
 		z-index: -998;
+		/* diver */
 	}
 	.pos-4 {
 		grid-area: 18 / 6 / 31 / 15;
 		z-index: -99;
 		/* tie */
 	}
-	.pos-5 {
+	/* .pos-5 {
 		grid-area: 9 / 29 / 21 / 40;
 		z-index: -99;
-	}
+	} */
 	.pos-6 {
 		grid-area: 30 / 2 / 49 / 12;
+		/* bike */
 	}
 	.pos-7 {
 		grid-area: 34 / 18 / 47 / 26;
+		/* woman sitting */
 	}
 	.pos-8 {
 		grid-area: 32 / 31 / 49 / 37;
 		z-index: -99;
+		/* man walking */
 	}
 	.pos-9 {
 		grid-area: 31 / 39 / 47 / 50;
+		/* bag */
    }
 
 
