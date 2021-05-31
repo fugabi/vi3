@@ -6392,7 +6392,7 @@ var Grid = /*#__PURE__*/function () {
       }, 0).to(this.items, {
         duration: 4,
         ease: 'Power1.easeOut',
-        opacity: 0.7,
+        opacity: 0.9,
         stagger: {
           amount: 0.6,
           grid: 'auto',

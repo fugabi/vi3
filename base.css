@@ -116,10 +116,24 @@ h3 {
 	color:rgba(233, 16, 16, 0.815);
 }
 
+h4 {
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: bold;
+
+		
+}
+
+
+.ks-thema {
+	font-weight: bold;
+	color: var(--color-link-hover);
+}
+
 @media screen and (max-width: 1024px) {
 
 	h3 {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 	}
 
 
@@ -166,6 +180,45 @@ p {
 	}
 
 }
+
+
+
+/* .breathe {
+	animation-name: breathe;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+  }
+  @keyframes breathe {
+	0% {
+	  font-size: 14px;
+	}
+	
+	50% {
+	  font-size: 16px;
+	}
+	
+	100% {
+	  font-size: 18px;
+	}
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* title */
 
