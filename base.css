@@ -128,7 +128,31 @@ h4 {
 .ks-thema {
 	font-weight: bold;
 	color: var(--color-link-hover);
+	padding-top: 1.2rem;
+	
 }
+
+
+.ks-p{
+font-size: 16px;
+border-bottom: solid 1px;
+}
+.ks-name{
+	text-transform: uppercase;
+	text-align: right;
+	color: var(--color-link-hover);
+	
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1024px) {
 
@@ -1640,8 +1664,10 @@ p {
   }
   
   .desc p{
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+	
   }
+ 
 
 
 
