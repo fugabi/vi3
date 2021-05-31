@@ -135,13 +135,13 @@ h4 {
 
 .ks-p{
 font-size: 16px;
-border-bottom: solid 1px;
+
 }
 .ks-name{
 	text-transform: uppercase;
 	text-align: right;
 	color: var(--color-link-hover);
-	
+	border-bottom: solid 1px;
 }
 
 
