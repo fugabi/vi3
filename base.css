@@ -47,7 +47,7 @@ body {
 	 --color-light: #f5f5f5;
 	 --td: 150ms;
 	 --te: cubic-bezier(0.215, 0.61, 0.355, 1);
-	--color-text: #C7B8BD;
+	--color-text: #a1969a;
     --color-bg: #ffff;
     --color-link: #C7B8BD;
 	--color-link-hover: #fc6565;
@@ -57,12 +57,14 @@ body {
     --cursor-stroke: #ff0000;
     --cursor-fill: none;
     --cursor-stroke-width: 1px;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-family: 'Montserrat', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+	cursor: default;
+	
 }
 
 
@@ -110,14 +112,14 @@ h2 {
 	color:rgba(233, 16, 16, 0.815);
 }
 h3 {
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	color:rgba(233, 16, 16, 0.815);
 }
 
 @media screen and (max-width: 1024px) {
 
 	h3 {
-		font-size: 12px;
+		font-size: 1.2rem;
 	}
 
 
@@ -125,24 +127,51 @@ h3 {
 
 p {
 	font-size: 19px;
-	line-height: 1.4;
-	font-weight: 500;
+	line-height: 1.5;
+	font-weight: 400;
 	letter-spacing: 1.5px;
 	color: var(--color-text);
 	/* padding: 12px; */
 }
 
 
-.header {
-	padding: 4rem 0 4rem 0;
-	
+
+
+@media screen and (max-width: 1024px) {
+
+	.header h1 {
+		padding: 4rem 0 2rem 0;
+		text-align: center;
+		font-size: 11vw;
+		font-family: 'Montserrat', sans-serif;
+	}
+	.header h2 {
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+
+	.header h1{
+		padding: 4rem 0 4rem 0;
+		text-align: center;
+		font-size: 5vw;
+		font-family: 'Montserrat', sans-serif;
+		
+	}
+	.header h2 {
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+	}
+
 }
 
 /* title */
 
 
 
-.text-title {
+/* .text-title {
 	position: absolute;
 	right: 50%;
 	transform: translate(50%,0);
@@ -177,7 +206,7 @@ p {
 		  font-weight: 700;
 		 padding-bottom: 3em;
 	  }
- }
+ } */
  
  
 
@@ -546,22 +575,15 @@ p {
 		}
 
 	.txt p{
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 1.4rem;
 	}
 
 	.first-letter{
-		font-size: 1.9rem; 
+		font-size: 1.5rem; 
 		color: red; 
 		font-weight: bold; 
-		font-family: serif;
-	}
-
-	.first-letter{
-		font-size: 2rem; 
-		color: red; 
-		font-weight: bold; 
-		font-family: serif;
+		
 	}
 	
 	
@@ -579,7 +601,7 @@ p {
 	
 	footer p {
 	color: white;
-	font-size: 12px;
+	font-size: 16px;
 	line-height: .5rem;
 	}
 	
@@ -925,6 +947,35 @@ p {
 
 
 
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	main {
@@ -950,12 +1001,15 @@ p {
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: 100vh;
+		margin: auto	;
+		
+		/* height: 100vh; */
+		height: auto;
 		
 	  }
 	  
 	  .img {
-		width: 45%;
+		width: 35%;
 		padding: 2em;
 		/* color: #ffffff; */
 		height: auto;
@@ -963,7 +1017,7 @@ p {
 	  }
 	  
 	  .txt {
-		width: 45%;
+		width: 35%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -971,12 +1025,39 @@ p {
 		padding: 3rem;
 		/* min-height: 500px; */
 		color: #222;
+		cursor: default;
 		
 	  }
 	  
 	.txt p{
 		font-size: 1.2rem;
 	}
+
+
+
+
+
+
+
+	.first-letter{
+		font-size: 1.5rem; 
+		color: red; 
+		font-weight: bold; 
+		
+	}
+
+
+
+
+
+
+
+
+	
+
+
+
+
 
 
 
