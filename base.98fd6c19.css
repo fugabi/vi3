@@ -466,8 +466,8 @@ html.has-scroll-dragging {
 	position: absolute;
 	top: 0;
 	right: 0;
-	background-color: rgb(248, 0, 0);
-	opacity: 0.5;
+	background-color: var(--color-link-hover);
+	/* opacity: 0.5; */
 	width: 7px;
 	border-radius: 10px;
 	margin: 2px;
@@ -755,6 +755,7 @@ html.has-scroll-dragging {
   position: relative;
   color: #ececee;
   transition: all 250ms linear;
+  text-decoration: none;
 }
 .nav ul li a:hover{
   text-decoration: none;
