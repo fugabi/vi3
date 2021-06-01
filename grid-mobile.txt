@@ -1,0 +1,89 @@
+
+
+.pos-1 {
+	grid-area: 5 / 4 / 12 / 18;
+	
+	/* haircut */
+}
+
+.pos-2 {
+	grid-area: 4 / 15 / 13 / 35;
+	z-index: -5;
+	/* queen */
+}
+
+.pos-3 { 
+	grid-area: 5 / 36 / 17 / 46;
+	z-index: -99;
+	/* diver */
+}
+
+.pos-4 {
+	grid-area: 17 / 12 / 23 / 27; 
+	/* tie */
+}
+
+
+.pos-5 {
+	grid-area: 18 / 24 / 22 / 37;
+	z-index: -999;
+	/* makeup */
+}
+
+
+.pos-6 {
+	grid-area: 31 / 6 / 36 / 22;
+	/* bike */
+}
+
+.pos-7 {
+	grid-area: 40 / 9 / 47 / 26; 
+	/* woman sitting */
+}
+
+
+
+.pos-8 {
+	grid-area: 30 / 34 / 43 / 46;
+	z-index: -99;
+	/* man walking */
+}
+
+.pos-9 {
+	grid-area: 21 / 34 / 25 / 44;
+	z-index: 999;
+	/* bag */
+}
+
+
+	.pos-1t {
+	grid-area: 13 / 6 / 20 / 24;
+}
+
+	.pos-2t {
+	grid-area: 17 / 24 / 24 / 45;
+	z-index: 999;
+}
+
+
+	.pos-3t {
+	grid-area: 13 / 24 / 26 / 44;
+	z-index: 998;
+}
+
+	.pos-4t {
+	grid-area: 30 / 24 / 44 / 40;
+	z-index: 99;
+}
+.pos-5t {
+	grid-area: 19 / 6 / 29 / 40;
+	z-index: 999;
+}
+	.pos-6t {
+	grid-area: 36 / 6 / 49 / 49;
+	z-index: 999;
+}
+	.pos-7t {
+	grid-area: 43 / 30 / 50 / 50;
+	z-index: 999;
+}
