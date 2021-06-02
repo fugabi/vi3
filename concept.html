@@ -15,6 +15,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+<link href="/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -48,8 +50,8 @@
 
         <div class="parent">
   
-            <img class="img" src="img/concept/Bild Concept Wahrheiten finden Abstrakt.jpg" alt="">
-            <div class="txt">
+            <img class="img" data-aos="fade-right" data-aos-duration="1000" src="img/concept/Bild Concept Wahrheiten finden Abstrakt.jpg" alt="">
+            <div class="txt" data-aos="fade-left" data-aos-duration="1000">
               <h2>WAHRHEITEN FINDEN</h2>
               <p><span class="first-letter">V</span>ALUE <br> Werte, Normen, Rollen sind wesentliche Aspekte von Identität. Sie zeigen unsere Beziehung zwischen den persönlichen und den gesellschaftlichen Wertigkeiten. </p>
                <p><span class="first-letter">I</span>MAGE <br> Bilder machen Inneres I Äusseres sichtbar, aktivieren Ressourcen, unterstützen die Introspektive. Sie bilden eine Brücke zwischen bewusster I nicht bewusster Welt.</p>
@@ -61,22 +63,16 @@
     
         </div>
 
-        <div class="parent " style="background-color: black; ">
+        <div class="parent" data-aos="fade-right" data-aos-duration="1000" style="background-color: black; ">
     
             <div class="txt" style="color: white;">
                 <h2>WIRKLICHKEIT GESTALTEN </h2>
                 <p><span class="first-letter">I</span>DENTITY <br> Was dich ausmacht. Wofür du stehst. Was in dir steckt. Wofür du brennst. Was du denkst. Was du liebst. Was du trägst. Was du bist. Unendlich viel.  </p>
                 <p> <span class="first-letter">D</span>IVERSTITY <br> Kein Mensch, kein Weg gleicht dem anderen. Einzigartige Menschen. Einzigartige Vielfalt. Einzigartig Du.</p>
                 <p><span class="first-letter">A</span>RT <br> Deine Art zu Leben spiegelt mehr dein Inneres. Du kennst deine Wertigkeit, deine Stärken, Talente…, all jenes was gerade DICH ausmacht, und du gestaltest DEINE Wirklichkeit.</p>
-                    
-                    
-                    
-
-                    
-               
                
               </div>
-              <img class="img" src="img/concept/Bild Concept Wahrheiten gestalten Abstrakt.jpg" alt="">
+              <img data-aos="fade-left" data-aos-duration="1000" class="img"  src="img/concept/Bild Concept Wahrheiten gestalten Abstrakt.jpg" alt="">
             
                 <!-- <div class="img" style="background: url(img/concept/Bild\ Concept\ Wahrheiten\ gestalten\ Abstrakt.jpg) center center no-repeat; background-size: cover; max-width: 700px; "></div>
             </div> -->
@@ -101,11 +97,8 @@
 		</svg>
 		
 		<script src="new.js"></script>
-
         <script>
-
-
-
-        </script>
+			AOS.init();
+		  </script>
     </body>
 </html>

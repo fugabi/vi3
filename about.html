@@ -15,6 +15,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+<link href="/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -48,10 +51,10 @@
 
         <div class="parent" style="padding: 2rem;">
   
-                <img class="img"  src="img/about/Bild Franziska about me .jpg" alt="">
+                <img data-aos="fade-right" data-aos-duration="1000" class="img"  src="img/about/Bild Franziska about me .jpg" alt="">
 
                 
-            <div class="txt">
+            <div data-aos="fade-left" data-aos-duration="1000" class="txt">
                 <h2>VIA IDA das bin ich: Franzis Ka Herl. <br> Coaching und Modedesign. <br> Bewusstsein und Gestaltung. <br> Identität und Kleider. </h2>
               <p>Kleider zu machen, (m)ein Traum. Diese Wahrheit tief verschüttet und die Schritte bis dahin: </p>
               
@@ -97,7 +100,9 @@
 </svg>
 
 <script src="new.js"></script>
+<script>
+    AOS.init();
+  </script>
 
-        <script src="" async defer></script>
     </body>
 </html>

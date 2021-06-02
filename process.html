@@ -15,6 +15,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+<link href="/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -49,16 +51,19 @@
 <div class="process">
 
 	<div class="process-intro">
-		<h3>DAS ERSTGESPRÄCH</h3>
-		<p>Was erhoffst du dir? <br> Wie kann ich dich unterstützen? <br> Wir hören oder sehen uns via Telefon oder Zoom Call. <br> Dauer: 30 – 45 Minuten. <br> Kosten: keine.</p>
+		<h3 data-aos="fade-right" data-aos-duration="1000">DAS ERSTGESPRÄCH</h3>
+		<p data-aos="fade-left" data-aos-duration="1000">Was erhoffst du dir? <br> Wie kann ich dich unterstützen? <br> Wir hören oder sehen uns via Telefon oder Zoom Call. <br> Dauer: 30 – 45 Minuten. <br> Kosten: keine.</p>
 		
 	</div>
     
-    
-	<h3 style="text-align: center; padding-bottom: 3rem;">ETAPPEN UNSERER ZUSAMMENARBEIT</h3>
+    <div data-aos="zoom-in" data-aos-duration="1000">
+
+	
+	<h3 data-aos="fade-right" data-aos-duration="1000" style="text-align: center; padding-bottom: 3rem;">ETAPPEN UNSERER ZUSAMMENARBEIT</h3>
+
 	<div class="timeline-item" frage='WAS'>
 		
-		<p>
+		<p  >
             Die Klärungsphase dient der Orientierung. Was bewegt dich? Was ist dein Thema? Was wünschst du dir? Was soll sich verändern?
 		</p>
 	</div>
@@ -90,12 +95,12 @@
 	</div>
 	
 </div>
-
+</div>
 
 
 <div class="parent " style="background-color: black; ">
     
-	<div class="txt" style="color: white;">
+	<div data-aos="fade-right" data-aos-duration="1000" class="txt" style="color: white;">
 		<p> <span style="font-weight: 900;" >THE CLOTHING</span> <br> Die Kleider <em>können</em> an jeder Phase eingebunden werden. Alles kann. Nichts muss. </p>
 <h2>WIRKLICHKEIT: <br>
     INNERE ERKENNEN. <br> ÄUSSERE VERÄNDERN. 
@@ -104,7 +109,7 @@
     </h2>
 	   
 	  </div>
-	  <img class="img-round" src="img/process/olga-thelavart-1nrY9CLAGcI-unsplash.jpg" alt="">
+	  <img data-aos="fade-left" data-aos-duration="1000" class="img-round" src="img/process/olga-thelavart-1nrY9CLAGcI-unsplash.jpg" alt="">
 	
 		<!-- <div class="img" style="background: url(img/concept/Bild\ Concept\ Wahrheiten\ gestalten\ Abstrakt.jpg) center center no-repeat; background-size: cover; max-width: 700px; "></div>
 	</div> -->
@@ -156,6 +161,8 @@
 
 <script src="new.js"></script>
 
-
+<script>
+	AOS.init();
+  </script>
     </body>
 </html>

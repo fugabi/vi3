@@ -1,4 +1,8 @@
-[data-aos][data-aos][data-aos-duration="50"],
+
+
+@media only screen and (min-width:1024px) {
+ 
+  [data-aos][data-aos][data-aos-duration="50"],
 body[data-aos-duration="50"] [data-aos] {
   transition-duration: 50ms;
 }
@@ -914,3 +918,5 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
 [data-aos="flip-down"].aos-animate {
   transform: perspective(2500px) rotateX(0);
 }
+ 
+ }
