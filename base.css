@@ -110,6 +110,7 @@ h1 {
 h2 {
 	font-size: 1.75rem;
 	color:rgba(233, 16, 16, 0.815);
+	font-family: 'Cinzel', serif;
 }
 h3 {
 	font-size: 1.5rem;
@@ -984,7 +985,7 @@ p {
 }
 
 	.pos-4t {
-	grid-area: 12 / 45 / 29 / 49;
+	grid-area: 12 / 45 / 16 / 48;
 	z-index: 999;
 }
 	.pos-5t {
@@ -1906,7 +1907,7 @@ p {
 }
 
 .nav ul h2{
-	/* font-family: 'Montserrat', sans-serif; */
+	font-family: 'Montserrat', sans-serif;
 	font-size: 2vw;
 	text-transform: uppercase;
 	line-height: 1rem;
@@ -2074,4 +2075,8 @@ p {
 }
 
 
+
+
+
+  
 
