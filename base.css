@@ -110,7 +110,7 @@ h1 {
 h2 {
 	font-size: 1.75rem;
 	color:rgba(233, 16, 16, 0.815);
-	font-family: 'Cinzel', serif;
+	font-family: 'Playfair Display SC', serif;
 	font-weight: 500;
 }
 h3 {
@@ -600,7 +600,7 @@ p {
 }
 
 .content__title {
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: rgba(0, 0, 0, 0.815);
 	font-weight: bold;
 	font-size: 13vw;
